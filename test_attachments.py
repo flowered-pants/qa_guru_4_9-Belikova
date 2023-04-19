@@ -1,6 +1,13 @@
+from allure_commons.types import Severity
 import allure
 from allure import attachment_type
-import json
+@allure.tag('web')
+@allure.severity(Severity.NORMAL)
+@allure.label('owner', 'wombatoff')
+@allure.feature('Проверка наличия Issue на github')
+@allure.story('Лямбда шаги через with allure.step')
+@allure.link('https://github.com')
+
 def test_attachmants():
     allure.attach('text', name='text', attachment_type=attachment_type.TEXT)
     allure.attach('<h2> Тэг <h2>', name='html', attachment_type=attachment_type.HTML)

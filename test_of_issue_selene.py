@@ -1,8 +1,5 @@
-
 from selene import by, be
 from selene import browser
-
-
 def test_github():
     browser.open_url("https://github.com")
     browser.element(".header-search-input").click()

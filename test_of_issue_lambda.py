@@ -1,8 +1,15 @@
+from allure_commons.types import Severity
 from selene import by, be
 from selene import browser
 import allure
 
 
+@allure.tag('web')
+@allure.severity(Severity.NORMAL)
+@allure.label('owner', 'wombatoff')
+@allure.feature('Проверка наличия Issue на github')
+@allure.story('Лямбда шаги через with allure.step')
+@allure.link('https://github.com')
 
 def test_github():
     with allure.step('Открываем браузер'):
