@@ -3,9 +3,9 @@ import allure
 from allure import attachment_type
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
-@allure.label('owner', 'wombatoff')
+@allure.label('owner', 'belikova')
 @allure.feature('Проверка наличия Issue на github')
-@allure.story('Лямбда шаги через with allure.step')
+@allure.story('Добавление аттачмантов')
 @allure.link('https://github.com')
 
 def test_attachmants():

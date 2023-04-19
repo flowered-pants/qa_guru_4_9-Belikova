@@ -6,9 +6,9 @@ from selene import browser
 
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
-@allure.label('owner', 'wombatoff')
+@allure.label('owner', 'belikova')
 @allure.feature('Проверка наличия Issue на github')
-@allure.story('Лямбда шаги через with allure.step')
+@allure.story('Шаги с помощью декоратора')
 @allure.link('https://github.com')
 
 def test_decorator_steps():

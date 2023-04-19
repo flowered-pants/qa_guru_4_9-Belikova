@@ -6,7 +6,7 @@ import allure
 
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
-@allure.label('owner', 'wombatoff')
+@allure.label('owner', 'belikova')
 @allure.feature('Проверка наличия Issue на github')
 @allure.story('Лямбда шаги через with allure.step')
 @allure.link('https://github.com')
